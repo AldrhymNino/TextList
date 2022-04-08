@@ -40,11 +40,5 @@ list.addEventListener('mousedown', _e => {
         const parent = target.closest('.list_item');
         const id = parseInt(parent.id);
         itemList.forEach(_e => _e.id === id ? _e.remove(parent) : null);
-        /* for(let i = 0, length = data.length; i < length; i++) {
-            if(itemList[i].id === id) {
-                itemList[i].remove(parent);
-                break;
-            }
-        } */
     }
 });
