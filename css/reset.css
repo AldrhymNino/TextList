@@ -1,0 +1,147 @@
+/* Reset */
+html, body, header, nav, aside, main, section, article, footer, div, p, blockquote, form,
+label, input, textarea, button, legend, fieldset, select, table, tr, td, th, thead, tbody,
+tfoot, details, summary, dl, dt, dd, ul, li, ol, video, audio,img, iframe, embed, figcaption, figure,
+h1, h2, h3, h4, h5, h6, hr {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, input, textarea {
+    font-family: 'Segoe UI';
+    color: #363d42;
+    font-size: 18px;
+}
+
+body, input, textarea {
+    line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6, body, input, textarea, button {
+    font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+i, em, cite, address {
+    font-style: italic;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+dfn {
+    font-style: normal;
+    font-weight: 400;
+}
+
+s, del {
+    text-decoration: line-through;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+sup {
+    vertical-align: super;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+abbr, acronym {
+    text-decoration: dotted underline;
+}
+
+ul, ol, dl, dd {
+    margin-left: 20px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    height: 36px;
+    padding: 0px 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    overflow: auto;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border: solid 1px #b4b4b4;
+    background-color: transparent;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:active {
+    opacity: 0.9;
+}
+
+input, textarea, button {
+    display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: #0074d9;
+    text-decoration: none;
+}
+
+hr {
+    color: #eee;
+}

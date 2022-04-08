@@ -1,0 +1,36 @@
+/* ==== Container ==== */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==== Control ==== */
+.control {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ==== List_item ==== */
+.list_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: space-between; 
+}
+
+/* ==== conatiner-modal ==== */
+.container-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}

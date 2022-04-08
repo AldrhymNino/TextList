@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-list</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/eb98ac5266.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="control">
+                <input type="text" class="input-item" id="input-item" placeholder="Agregar texto">
+                <button class="btn btn-submit" id="btn-submit">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+            <div class="list" id="list"></div>
+        </div>
+    </div>
+    <div class="container-modal" id="container-modal">
+        <div class="modal">
+            <h2>Editar</h2>
+            <input type="text" class="input-item" id="modal_input" placeholder="Agregar texto">
+            <button class="btn btn-submit modal_btn-edit" id="modal_btn">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+        </div>
+    </div>
+    <!-- ScriptJS -->
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
