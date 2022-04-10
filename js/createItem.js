@@ -1,11 +1,4 @@
-import { data, itemList } from "./data.js";
-import { Item } from "./classItem.js";
-export function addList(_content) {
-    const id = data.length;
-    const item = new Item(id, _content);
-    data.push({id, content: _content});
-    itemList.push(item);
-    localStorage.setItem('data', JSON.stringify(data));
+export function createItem(_id, _content) {
     // creando elemntos
     const list = document.querySelector('#list');
     const element = document.createElement('div');
@@ -20,7 +13,7 @@ export function addList(_content) {
             </button>
         </div>
     `;
-    element.setAttribute('id', id);
+    element.setAttribute('id', _id);
     element.classList.add('list_item');
-    list.appendChild(element);
+    return element;
 }
