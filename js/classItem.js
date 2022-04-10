@@ -1,5 +1,4 @@
 import { data, itemList } from "./data.js";
-import { createItem } from "./createItem.js";
 export class Item {
     constructor(_id, _content) {
         this.id = _id;
@@ -15,9 +14,13 @@ export class Item {
         localStorage.setItem('data', JSON.stringify(data));
     }
 
-    edit(_content) {
+    edit(_parent, _content) {
         const list = document.getElementById('list');
+        const p = _parent.querySelector('p');
         const index = data.findIndex(_e => _e.id === this.id);
-        const element = createItem();
+        p.textContent = _content;
+        data[index].content = _content;
+        itemList[index].content = _content;
+        localStorage.setItem('data', JSON.stringify(data));
     }
 }

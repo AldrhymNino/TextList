@@ -1,5 +1,4 @@
-import { data, itemList } from "./data.js";
-import { Item } from "./classItem.js";
+import { data } from "./data.js";
 import { createItem } from "./createItem.js";
 import { toRegister } from "./toRegister.js";
 const load = (() => {
