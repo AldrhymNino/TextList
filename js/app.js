@@ -1,5 +1,5 @@
 import "./load.js";
-import { data, itemList } from "./data.js";
+import { itemList } from "./data.js";
 import { addList } from "./addList.js";
 
 // DOM { input, submit }
