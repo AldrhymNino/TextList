@@ -12,14 +12,18 @@ const modalInput = document.querySelector('#modal_input');
 const modalBtn = document.querySelector('#modal_btn');
 
 // Events
+function set() {
+    const id = itemList.length;
+    const element = createItem(id, content);
+    toRegister(id, content);
+    list.appendChild(element);
+    inputItem.value = '';
+}
+
 btnSubmit.addEventListener('mousedown', _e => {
     const content = inputItem.value;
     if(content) {
-        const id = itemList.length;
-        const element = createItem(id, content);
-        toRegister(id, content, 'add');
-        list.appendChild(element);
-        inputItem.value = '';
+        set();
     }else {
         inputItem.classList.add('error');
     }
@@ -30,11 +34,7 @@ inputItem.addEventListener('keyup', _e => {
     if(_e.key === 'Enter') {
         const content = inputItem.value;
         if(content) {
-            const id = itemList.length;
-            const element = createItem(id, content);
-            toRegister(id, content, 'add');
-            list.appendChild(element);
-            inputItem.value = '';
+            set();
         }else {
             inputItem.classList.add('error'); 
         }

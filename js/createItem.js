@@ -1,6 +1,5 @@
 export function createItem(_id, _content) {
-    // creando elemntos
-    const list = document.querySelector('#list');
+    // creando elementos
     const element = document.createElement('div');
     element.innerHTML = `
         <p>${_content}</p>

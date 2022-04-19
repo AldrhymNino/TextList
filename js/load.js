@@ -1,6 +1,5 @@
-import { data } from "./data.js";
+import { data, itemList } from "./data.js";
 import { createItem } from "./createItem.js";
-import { toRegister } from "./toRegister.js";
 const load = (() => {
     if(data) {
         const frament = document.createDocumentFragment();
@@ -8,7 +7,8 @@ const load = (() => {
         for(let i = 0, length = data.length; i < length; i++) {
             const current = data[i];
             const {id, content} = current;
-            toRegister(id, content, 'load');
+            const item = new Item(id, content);
+            itemList.push(item);
             // añadiendo elementos al DOM
             const element = createItem(id, content);
             frament.appendChild(element);
